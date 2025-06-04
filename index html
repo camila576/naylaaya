@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>naylaaya.com</title>
+  <style>
+    :root {
+      --rose-pale: #f7c6d9;
+      --rose-principal: #A0031F;
+      --rose-clair: #fce4ec;
+      --texte-foncé: #6b4c5b;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--rose-pale);
+      color: var(--texte-foncé);
+    }
+    header {
+      background-color: var(--rose-clair);
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: var(--rose-principal);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #fff5f9;
+      padding: 1rem;
+    }
+    nav a {
+      color: var(--rose-principal);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .product-card {
+      background-color: #fff8fa;
+      padding: 1rem;
+      border-radius: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .product-card h3 {
+      color: var(--rose-principal);
+    }
+    .product-image {
+      width: 100%;
+      height: 200px;
+      background-color: #fcd6e3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #a25f76;
+      font-style: italic;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+    }
+    .buy-button {
+      background-color: var(--rose-principal);
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border: none;
+      border-radius: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .buy-button:hover {
+      background-color: #80031b;
+    }
+    footer {
+      background-color: var(--rose-clair);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #a25f76;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>naylaaya.com</h1>
+    <p>La boutique girly & élégante dédiée aux abayas de rêve.</p>
+  </header>
+  <nav>
+    <a href="#boutique">Boutique</a>
+  </nav>
+  <main>
+    <section id="boutique">
+      <h2>Nos Abayas</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">test</div>
+          <h3>Abaya Perle de Lune</h3>
+          <p>Une coupe fluide et légère, idéale pour l’été.</p>
+          <strong>65 €</strong><br />
+          <button class="buy-button">Acheter</button>
+        </div>
+        <div class="product-card">
+          <div class="product-image">test</div>
+          <h3>Abaya Rose Sultane</h3>
+          <p>Chic et délicate, avec touches dorées subtiles.</p>
+          <strong>85 €</strong><br />
+          <button class="buy-button">Acheter</button>
+        </div>
+        <div class="product-card">
+          <div class="product-image">test</div>
+          <h3>Abaya Satin de Damas</h3>
+          <p>Élégance et raffinement pour des soirées stylées.</p>
+          <strong>99 €</strong><br />
+          <button class="buy-button">Acheter</button>
+        </div>
+        <div class="product-card">
+          <div class="product-image">test</div>
+          <h3>Abaya Mukhawara Royal</h3>
+          <p>Robe Mukhawara brodée, digne des 1001 nuits.</p>
+          <strong>120 €</strong><br />
+          <button class="buy-button">Acheter</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Naylaaya. Tous droits réservés.
+  </footer>
+</body>
+</html>
